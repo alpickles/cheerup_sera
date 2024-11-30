@@ -1,0 +1,3 @@
+# Ignore .env files and other sensitive data
+.env
+*.pem
