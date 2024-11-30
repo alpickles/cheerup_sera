@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Cheer Up Sera</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>About This App</h1>
+        <nav>
+            <a href="/" class="{{ 'active' if request.path == '/' else '' }}">Home</a> |
+            <a href="/about" class="{{ 'active' if request.path == '/about' else '' }}">About</a> |
+            <a href="/prompt" class="{{ 'active' if request.path == '/prompt' else '' }}">Prompt Page</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>This App is for Sera</h2>
+            <p>Uh, if you're not Sera, I wish you the best, but...</p>
+            <p>This app provides random, encouraging, and thoughtful messages for a girl I know named Sera.</p>
+            <p>Maybe I'm crazy... Maybe I needed a pet project...Maybe a lotta things...</p>
+            <p>Here we are now &#128140;</p>
+            <p>Each message is uniquely generated. It’s designed to uplift her as she navigates life with faith and confidence.</p>
+            <p>What's truly important in life? &#128173;</p>
+            <p>Wherever you go, remember, God loves you.</p>
+            <p><a href="/">Back to Home</a></p>
+        </section>
+    </main>
+</body>
+</html>
